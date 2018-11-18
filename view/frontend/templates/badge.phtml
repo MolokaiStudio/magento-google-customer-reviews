@@ -1,0 +1,25 @@
+<?php
+
+/** @var \MolokaiStudio\GoogleCustomerReviews\ViewModel\Badge $viewModel */
+$viewModel = $block->getViewModel();
+
+?>
+
+<?php if ($viewModel->isBadgeEnabled()) : ?>
+<!-- GOOGLE CUSTOMERS REVIEW START -->
+<script src="https://apis.google.com/js/platform.js?onload=renderBadge" async defer></script>
+<script>
+    window.renderBadge = function() {
+        var ratingBadgeContainer = document.createElement("div");
+        document.body.appendChild(ratingBadgeContainer);
+        window.gapi.load('ratingbadge', function() {
+            window.gapi.ratingbadge.render(ratingBadgeContainer, {
+                "merchant_id": "<?php echo $viewModel->getMerchantId(); ?>",
+                "position": "<?php echo $viewModel->getBadgePosition(); ?>"
+            });
+        });
+    }
+</script>
+<!-- GOOGLE CUSTOMERS REVIEW END -->
+
+<?php endif; ?>

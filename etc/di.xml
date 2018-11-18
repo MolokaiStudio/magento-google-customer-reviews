@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="MolokaiStudio\GoogleCustomerReviews\Model\ConfigurationInterface" type="MolokaiStudio\GoogleCustomerReviews\Model\Configuration" />
+    <preference for="MolokaiStudio\GoogleCustomerReviews\Model\EstimatedDeliveryInterface" type="MolokaiStudio\GoogleCustomerReviews\Model\EstimatedDelivery" />
+</config>

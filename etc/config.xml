@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <molokaistudio_customerreviews>
+            <general>
+                <enabled>0</enabled>
+                <merchant_id></merchant_id>
+            </general>
+            <badge>
+                <enabled>0</enabled>
+                <position>BOTTOM_RIGHT</position>
+            </badge>
+            <survey>
+                <estimated_delivery_time>7</estimated_delivery_time>
+                <position>CENTER_DIALOG</position>
+                <show_products_in_survey>0</show_products_in_survey>
+            </survey>
+        </molokaistudio_customerreviews>
+    </default>
+</config>
